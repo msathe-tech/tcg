@@ -1,0 +1,4 @@
+- type: replace
+  path: /product-properties/.properties.plan1_selector.active.disable_deny_escalating_exec?
+  value:
+    value: ((plan1_selector/active/disable_deny_escalating_exec))

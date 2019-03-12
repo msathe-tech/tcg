@@ -1,0 +1,4 @@
+- type: replace
+  path: /product-properties/.properties.telemetry_selector?
+  value:
+    value: disabled

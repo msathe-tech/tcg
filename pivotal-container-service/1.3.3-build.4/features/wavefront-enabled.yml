@@ -1,0 +1,13 @@
+- type: replace
+  path: /product-properties/.properties.wavefront?
+  value:
+    value: enabled
+- type: replace
+  path: /product-properties/.properties.wavefront.enabled.wavefront_api_url?
+  value:
+    value: ((wavefront/enabled/wavefront_api_url))
+- type: replace
+  path: /product-properties/.properties.wavefront.enabled.wavefront_token?
+  value:
+    value:
+      secret: ((wavefront/enabled/wavefront_token))

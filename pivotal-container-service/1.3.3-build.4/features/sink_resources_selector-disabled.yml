@@ -1,0 +1,4 @@
+- type: replace
+  path: /product-properties/.properties.sink_resources_selector?
+  value:
+    value: disabled

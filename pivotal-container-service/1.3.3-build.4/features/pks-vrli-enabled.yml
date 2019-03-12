@@ -1,0 +1,16 @@
+- type: replace
+  path: /product-properties/.properties.pks-vrli?
+  value:
+    value: enabled
+- type: replace
+  path: /product-properties/.properties.pks-vrli.enabled.host?
+  value:
+    value: ((pks-vrli/enabled/host))
+- type: replace
+  path: /product-properties/.properties.pks-vrli.enabled.use_ssl?
+  value:
+    value: ((pks-vrli/enabled/use_ssl))
+- type: replace
+  path: /product-properties/.properties.pks-vrli.enabled.skip_cert_verify?
+  value:
+    value: ((pks-vrli/enabled/skip_cert_verify))

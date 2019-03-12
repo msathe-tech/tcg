@@ -1,0 +1,4 @@
+- type: replace
+  path: /product-properties/.properties.proxy_selector?
+  value:
+    value: Enabled
