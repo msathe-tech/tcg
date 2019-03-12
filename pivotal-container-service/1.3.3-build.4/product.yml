@@ -63,3 +63,22 @@ resource-config:
       id: ((pivotal-container-service_instance_type))
     persistent_disk:
       size_mb: ((pivotal-container-service_persistent_disk_size))
+errand-config:
+  delete-all-clusters:
+    post-deploy-state: ((delete-all-clusters_post_deploy_state))
+    pre-delete-state: ((delete-all-clusters_pre_delete_state))
+  pks-nsx-t-precheck:
+    post-deploy-state: ((pks-nsx-t-precheck_post_deploy_state))
+    pre-delete-state: ((pks-nsx-t-precheck_pre_delete_state))
+  smoke-tests:
+    post-deploy-state: ((smoke-tests_post_deploy_state))
+    pre-delete-state: ((smoke-tests_pre_delete_state))
+  upgrade-all-service-instances:
+    post-deploy-state: ((upgrade-all-service-instances_post_deploy_state))
+    pre-delete-state: ((upgrade-all-service-instances_pre_delete_state))
+  wavefront-alert-creation:
+    post-deploy-state: ((wavefront-alert-creation_post_deploy_state))
+    pre-delete-state: ((wavefront-alert-creation_pre_delete_state))
+  wavefront-alert-deletion:
+    post-deploy-state: ((wavefront-alert-deletion_post_deploy_state))
+    pre-delete-state: ((wavefront-alert-deletion_pre_delete_state))
